@@ -385,8 +385,6 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.modal-button {
-}
 .modal-button:hover,
 .modal-button:focus {
   background: rgba(64, 75, 191, 1);
@@ -412,6 +410,14 @@ body {
   background-color: #404bbf;
   border: none;
   fill: #ffffff;
+}
+.check-svg-square:hover,
+.privacy-checkbox:hover + .check-label > .check-svg {
+  border: 1px solid #404bbf;
+}
+
+.check-svg-box:hover {
+  border: 1px solid #404bbf;
 }
 
 /* ПРО */
