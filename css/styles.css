@@ -109,6 +109,29 @@ body {
   color: var(--heading-text-color);
   padding: 24px 0;
 }
+
+/* підкреслення навіганції під ховером */
+
+.site-nav-item {
+  position: relative;
+}
+.site-nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  /* background-color: var(--accent-color); */
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+}
+.site-nav-item:hover::after {
+  background-color: var(--accent-color);
+  /* background: rgba(49, 208, 170, 1); */
+}
+
+/* поточна сторінка */
+
 .current-page {
   position: relative;
   color: var(--accent-color);
