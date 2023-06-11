@@ -114,6 +114,7 @@ body {
 
 .site-nav-item {
   position: relative;
+  transition: color var(--transition);
 }
 .site-nav-item::after {
   content: '';
@@ -127,10 +128,9 @@ body {
 }
 .site-nav-item:hover::after {
   background-color: var(--accent-color);
-  /* background: rgba(49, 208, 170, 1); */
 }
 
-/* поточна сторінка */
+/* поточна сторінка*/
 
 .current-page {
   position: relative;
