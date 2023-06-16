@@ -244,7 +244,7 @@ body {
   border-radius: 4px;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) rotate(90deg) scale(0);
+  transform: translate(-50%, -50%) rotate(0deg) scale(3);
 }
 .checkbox-form {
   font-family: 'Roboto';
