@@ -82,6 +82,10 @@ body {
   margin: 0 auto;
   align-items: center;
 } */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
 .logo-nav.link {
   justify-self: center;
 }
@@ -132,6 +136,43 @@ body {
 }
 .header-flex {
   padding: 25px 16px;
+}
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
 /* 
 .container {
@@ -1159,10 +1200,6 @@ body {
   fill: var(--accent-color);
   color: var(--accent-color);
 }
-*/
-
-
-
 
 /* .customers-list {
   display: flex;
@@ -1198,16 +1235,19 @@ body {
 } */
 
 /* Підвал */
-  /* padding: 100px 0; */
-  /* height: 322px; */
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  /* font-size: 16px; */
-  /* line-height: 1.5; */
-  /* letter-spacing: 0.02em; */
-  /* color: #f4f4fd; */
-  /* background-color: var(--heading-text-color); */
-
+/* padding: 100px 0; */
+/* height: 322px; */
+/* font-style: normal; */
+/* font-weight: 400; */
+/* font-size: 16px; */
+/* line-height: 1.5; */
+/* letter-spacing: 0.02em; */
+/* color: #f4f4fd; */
+/* background-color: var(--heading-text-color); */
+.footer {
+  background-color: var(--heading-text-color);
+  padding: 100px 0;
+}
 .footer-flex {
   display: flex;
   flex-direction: column;
