@@ -72,16 +72,17 @@ body {
   padding: 0 16px;
 }
 .header-section {
+  padding-top: 25px;
   margin-bottom: auto;
   height: 70px;
   align-items: center;
   border-bottom: 1px solid #e7e9fc;
 }
-/* .header-flex {
+.header-flex {
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
-} */
+}
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -109,34 +110,35 @@ body {
 .---icon {
   stroke: #2e2f42;
 }
-.---button {
+
+/* .---button {
   background-color: transparent;
   border: transparent;
   cursor: pointer;
   padding: auto 16px;
-}
-.mobile-nav {
+} */
+/* .mobile-nav {
   display: flex;
   justify-content: space-between;
-}
-.menu-hidden,
+} */
+/* .menu-hidden,
 .contacts-hidden,
 .doing {
   position: absolute;
-  clip-path: inset(100%);
+  clip-path: inset(100%); */
 
-  /* width: 1px; */
-  /* height: 1px; */
-  /* margin: -1px; */
-  /* border: 0; */
-  /* padding: 0; */
-  /* white-space: nowrap; */
-  /* clip: rect(0 0 0 0); */
-  /* overflow: hidden; */
-}
-.header-flex {
+/* width: 1px; */
+/* height: 1px; */
+/* margin: -1px; */
+/* border: 0; */
+/* padding: 0; */
+/* white-space: nowrap; */
+/* clip: rect(0 0 0 0); */
+/* overflow: hidden; */
+
+/* .header-flex {
   padding: 25px 16px;
-}
+} */
 .menu-container {
   position: fixed;
   top: 0;
@@ -144,7 +146,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #ffffff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -154,26 +156,36 @@ body {
 .menu-container.is-open {
   transform: translateX(0);
 }
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+.menu {
+  display: none;
+}
+.menu-toggle {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: transparent;
 }
 
 .mobile-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-.mobile-menu .link {
+.site-nav-item {
   display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--heading-text-color);
+  padding: 24px 0;
 }
+.current-page {
+  color: #404bbf;
+}
+
 /* 
 .container {
   width: 1158px;
