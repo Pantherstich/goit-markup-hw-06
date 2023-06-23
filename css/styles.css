@@ -95,16 +95,19 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header-section {
-  padding-top: 25px;
-  margin-bottom: auto;
-  height: 72px;
+    padding-top: 25px;
+    margin-bottom: auto;
+    height: 72px;
+  }
 }
-
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1128px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .doing {
+    display: none;
   }
 }
 
