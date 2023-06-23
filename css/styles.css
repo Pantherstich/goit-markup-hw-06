@@ -66,11 +66,25 @@ body {
 /* mobile */
 
 .container {
-  min-width: 320px;
-  max-width: 428px;
+  min-width: 288px;
+  max-width: 396px;
   margin: 0 auto;
   padding: 0 16px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .header-section {
   padding-top: 25px;
   margin-bottom: auto;
