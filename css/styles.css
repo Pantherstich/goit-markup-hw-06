@@ -75,6 +75,29 @@ body {
   .container {
     max-width: 736px;
   }
+  .site-nav {
+    display: flex;
+    gap: 40px;
+  }
+  .contacts .list {
+    /* display: flex; */
+    min-width: 340px;
+    gap: 40px;
+    font-style: normal;
+  }
+  .contacts-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-section {
+  padding-top: 25px;
+  margin-bottom: auto;
+  height: 72px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -82,6 +105,15 @@ body {
     max-width: 1128px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+  .contacts {
+    display: none;
   }
 }
 
@@ -93,8 +125,10 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 .header-flex {
+  display: flex;
   padding: 0 15px;
   margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
 }
 .navigation {
@@ -245,12 +279,6 @@ body {
   padding: 0;
 }
 
-/* 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 .header-section {
   margin-bottom: auto;
   height: 72px;
@@ -265,7 +293,7 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
-} */
+}
 /* Логотип */
 /* .logo-nav.link {
   justify-self: center;
@@ -485,9 +513,6 @@ body {
   align-self: center;
   cursor: pointer;
   transition: background-color var(--transition);
-}
-.doing {
-  display: none;
 }
 .is-hidden {
   visibility: hidden;
@@ -992,7 +1017,12 @@ body {
 } */
 /* шо ми робимо */
 
-/* .doing {
+@media screen and (max-width: 768px) {
+  .doing {
+    display: none;
+  }
+}
+.doing {
   padding-bottom: 120px;
 }
 .doing > .container {
@@ -1020,7 +1050,7 @@ body {
 }
 .doing-list-item {
   flex-basis: calc((100% - 3 * 16px) / 3);
-} */
+}
 
 /* Команда */
 .team {
