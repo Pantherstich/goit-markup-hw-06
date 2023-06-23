@@ -67,14 +67,14 @@ body {
 
 .container {
   min-width: 288px;
-  max-width: 396px;
+  max-width: 736px;
   margin: 0 auto;
   padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
-  .container {
+  /* .container {
     max-width: 736px;
-  }
+  } */
   .site-nav {
     display: flex;
     gap: 40px;
@@ -240,7 +240,7 @@ body {
   /* margin: 0 auto; */
   /* padding-right: auto; */
 }
-.site-nav-item {
+.site-nav-item-mob {
   display: block;
   font-style: normal;
   font-weight: 700;
@@ -275,7 +275,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.contacts {
+.contacts-mob {
   padding-bottom: 48px;
 }
 .mobile-menu .social-list {
@@ -404,8 +404,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 428px;
-  max-height: 432px;
+  max-width: 100%;
 
   margin: 0 auto;
   background-color: var(--heading-text-color);
