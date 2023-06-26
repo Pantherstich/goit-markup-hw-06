@@ -2079,6 +2079,26 @@ body {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
+@media (min-width: 768px) and (max-width: 1157px) {
+  .gallery-list {
+    row-gap: 72px;
+  }
+  .foto-flex {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (min-width: 1158px) {
+  .image-filter-list {
+    justify-content: center;
+  }
+
+  .gallery-list {
+    row-gap: 72px;
+  }
+  .foto-flex {
+    width: calc((100% - 48px) / 3);
+  }
+}
 
 /* 
 .image-filter-list {
